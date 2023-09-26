@@ -29,7 +29,6 @@
     "init-assets": "react-scripts start",
     "init-server": "node node app.js",
     "start": "npm run init-assets && npm run init-server",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
