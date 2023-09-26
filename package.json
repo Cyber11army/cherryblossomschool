@@ -24,11 +24,11 @@
     "server": "^1.0.38",
     "web-vitals": "^2.1.4"
   },
-  
   "scripts": {
-    "init-assets": "react-scripts start",
-    "init-server": "node node app.js",
-    "start": "npm run init-assets && npm run init-server",
+    "start": "concurrently \"npm run start-app\" \"npm run start-nodemon\"",
+    "start-app": "react-scripts start",
+    "start-nodemon": "node app.js",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -49,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
   }
 }
