@@ -5,8 +5,11 @@ import Contact from './components/pages/Contact';
 import About from './components/pages/About';
 import Navbar from './components/inc/Navbar';
 import Footer from './components/inc/Footer';
+import Staff from './components/pages/Staff';
+
 
 import {BrowserRouter ,Routes,Route} from 'react-router-dom';
+import Staffinfo from './components/pages/Staffinfo';
 function App() {
     return (
          
@@ -23,6 +26,10 @@ function App() {
                 <Route path="/" element={<Home />}/>
                 <Route path="/about" element={<About/>} />
                 <Route path="/contact" element={<Contact/>} />
+                <Route path="/staff" element={<Staff/>} />
+                <Route path="/staffinfo" element={<Staffinfo/>} />
+                
+                 
             </Routes>
             <Footer/>
             </div>

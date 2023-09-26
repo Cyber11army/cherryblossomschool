@@ -10,7 +10,7 @@ function VMC(){
                     <div className="underline mx-auto"></div>
                      <div className="col-md-4 text-center" id="inner-div">
                            <h5 id="text-responsive"><strong>Our Vission</strong></h5>
-                           <p id="text-responsive"><strong>
+                           <p className="text-justify" id="text-responsive"><strong>
                            our vision is to be a beacon of early childhood education excellence, inspiring a generation of 
                            confident, creative, and compassionate individuals. We envision a world where every child's unique 
                            potential is recognized and nurtured, where learning is a joyful adventure, and where the foundation 
@@ -21,9 +21,9 @@ function VMC(){
                            
                            
                      </div>
-                     <div className="col-md-4 text-center " id="inner-div">
+                     <div  className="col-md-4 text-center " id="inner-div">
                            <h5 id="text-responsive"><strong>Our Mission </strong></h5>
-                           <p id="text-responsive"><strong>
+                           <p className="text-justify" id="text-responsive"><strong>
                            our mission is to provide a nurturing and stimulating early childhood education environment
                            where children can flourish. We are dedicated to inspiring a lifelong love of learning by 
                            fostering curiosity, creativity, and self-confidence in each child. Our commitment to inclusivity 
@@ -33,7 +33,7 @@ function VMC(){
                      </div>
                      <div className="col-md-4 text-center " id="inner-div">
                            <h5 id="text-responsive"><strong>Our Values</strong></h5>
-                           <p id="text-responsive"><strong>
+                           <p className="text-justify" id="text-responsive"><strong>
                            our core value is to put children at the heart of everything we do. We believe that every child 
                            is unique, capable of boundless curiosity and creativity. We are committed to creating an inclusive 
                            and safe environment where diversity is celebrated, and every child is valued and respected.Safety is paramount, 

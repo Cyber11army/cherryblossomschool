@@ -1,12 +1,38 @@
-const { default: mongoose } = require("mongoose");
+var mongoose = require('mongoose');
 
-mongoose.connect("mongodb://0.0.0.0:27017/cherryblossomkindergarten")
-.then(()=>{
-    console.log("connected");
-})
-.catch(()=>{
-    console.log("failed");
-})
+// mongoose.connect("mongodb://0.0.0.0:27017/crud",{useNewUrlParser: true,  useUnifiedTopology: true },function checkDB(error)
+// {
+// }).then(()=>{
+//     console.log("connected");
+// })
+// .catch(()=>{
+//     console.log("failed");
+// })//crud
+
+// mongoose.connect("mongodb://0.0.0.0:27017/cherryblossomkindergarten",function check(error)
+// {
+//     if(error)
+//     {
+//         console.log("error")
+//     }
+//     else
+//     {
+//         console.log("connected")
+//     }
+// });
+mongoose.connect("mongodb+srv://cybertronarmy2611:Cyber2611@cluster0.v9ot1ts.mongodb.net/cherryblossomkindergarten",
+
+    function check(error)
+{
+    if(error)
+    {
+        console.log("error")
+    }
+    else
+    {
+        console.log("connected")
+    }
+});
 
 const newSchema = new mongoose.Schema({
     name:{
@@ -37,6 +63,8 @@ const collection=mongoose.model("collection",newSchema)
 // }
 // ]
 // collection.insertMany(data)
+
+
 
 module.exports=collection
 

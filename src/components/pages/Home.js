@@ -5,8 +5,13 @@ import VMC from '../inc/Vmc';
 import Service1 from '../images/Art & Craft Room.jpg';
 import Service2 from '../images/Music Room.jpg';
 import Service3 from '../images/Play Area.jpg';
+import {useEffect} from 'react';
 
 function Home() {
+    useEffect(() => {
+        //  scroll to top on page load
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+      }, []);
     return (
 
     <div>
@@ -17,7 +22,7 @@ function Home() {
                     <div className="col-md-12 text-center">
                         <h3 className="main-heading"> Our School</h3>
                         <div className="underline mx-auto"></div>
-                            <p className="container" id="text-responsive"><strong>
+                            <p className="container text-justify" id="text-responsive"><strong>
 
                                 "Welcome to [Cherry Blossom Kinder Garten], where childhood dreams take flight! 
                                 Our play school is a nurturing and vibrant environment designed to inspire curiosity,
@@ -39,14 +44,16 @@ function Home() {
                                 filled with endless possibilities."
                                 </strong>
                             </p>
-                        <Link to="/about" className="btn btn-warning shadow">Read More</Link>
+                        <Link to="/about" className="btn btn-warning shadow" onClick={() => {
+                           window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+                   }}>Read More</Link>
                         
 
                     </div>
 
                 </div>
 
-            </div>
+            </div>za
 
         </section>
         {/* Our Vision,mission and values */}
@@ -64,12 +71,14 @@ function Home() {
                             <div className="card-body">
                                 <h6>Art & Craft Room</h6>
                                 <div className="underline mx-auto"></div>
-                                <p>
+                                {/* <p className="text-justify">
                                 Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, 
                         graphic or web designs. The passage is attributed to an unknown typesetter 
                         
-                                </p>
-                                <Link to="/about" className="btn btn-primary">Read More</Link>
+                                </p> */}
+                                <Link to="/about" className="btn btn-primary" onClick={() => {
+                           window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+                   }}>Read More</Link>
                         </div>
                         </div>
                            
@@ -83,12 +92,14 @@ function Home() {
                             <div className="card-body">
                                 <h6>Music Room</h6>
                                 <div className="underline mx-auto"></div>
-                                <p>
+                                {/* <p className="text-justify">
                                 Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, 
                         graphic or web designs. The passage is attributed to an unknown typesetter 
                         
-                                </p>
-                                <Link to="/about" className="btn btn-primary">Read More</Link>
+                                </p> */}
+                                <Link to="/about" className="btn btn-primary" onClick={() => {
+                           window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+                   }}>Read More</Link>
                         </div>
                         </div>
                            
@@ -102,12 +113,14 @@ function Home() {
                             <div className="card-body">
                                 <h6>Play Area</h6>
                                 <div className="underline mx-auto"></div>
-                                <p>
+                                {/* <p className="text-justify">
                                 Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, 
                         graphic or web designs. The passage is attributed to an unknown typesetter 
                         
-                                </p>
-                                <Link to="/about" className="btn btn-primary">Read More</Link>
+                                </p> */}
+                                <Link to="/about" className="btn btn-primary" onClick={() => {
+                           window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+                   }}>Read More</Link>
                         </div>
                         </div>
                            

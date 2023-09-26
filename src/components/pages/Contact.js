@@ -1,6 +1,8 @@
 import React,{useState} from 'react';
 import axios from 'axios';
 
+
+
 function Contact() {
     
     const[name , setName] = useState('')
@@ -78,9 +80,9 @@ function Contact() {
                            <h5 className="main-heading">Address Information</h5>
                            <div className="underline"></div>
                            <p>
-                              #XXX ,Khekra(Baghpat),Up-250101
+                              Khekra(Baghpat),UP-250101
                            </p>
-                           <p> CALL US: 
+                           <p> Call Us: 
                            <a href="tel:+917409488021">
                                +91 7409488021
                            </a>

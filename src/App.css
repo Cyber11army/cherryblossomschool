@@ -49,10 +49,10 @@
 }
 @media screen and (max-width: 600px) {
   #school-responsive{
-    font-size: small;
+    font-size: xx-small;
   }
   #text-responsive{
-    font-size: small;
+    font-size:xx-small;
   }
 
 }

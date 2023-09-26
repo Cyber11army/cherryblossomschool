@@ -36,7 +36,7 @@ function About() {
             
                         <h5 className="main-heading text-center">Our School</h5>
                         <div className="underline mx-auto"></div>
-                        <p id="text-responsive"><strong>
+                        <p className="text-justify" id="text-responsive"><strong>
 
                                 "Welcome to [Cherry Blossom Kinder Garten], where childhood dreams take flight! 
                                 Our play school is a nurturing and vibrant environment designed to inspire curiosity,
